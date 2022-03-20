@@ -10,6 +10,7 @@ You can either run projects individually to debug or you can use docker-compose
 # Docker Compose
 1 - creating service image<br />
 cd {path}/pokemon-service<br />
+gradle build <br />
 docker build -t pokemon-service:latest .<br />
 
 2 - creating web image<br />
