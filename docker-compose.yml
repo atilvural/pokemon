@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  web:
+    container_name: pokemon-web
+    image: pokemon-web:latest
+    restart: always
+    ports:
+      - 80:80
+    hostname: pokemon-web
+    links:
+      - app
+
+  app:
+    container_name: pokemon-service
+    restart: always
+    image: pokemon-service:latest
+    ports:
+      - 8081:8081
+    hostname: pokemon-service
