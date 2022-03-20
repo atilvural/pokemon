@@ -20,3 +20,4 @@ docker build -t pokemon-web:latest .<br />
 3 - Running<br />
 cd into docker-compose file location then run<br />
 docker-compose up -d<br />
+
